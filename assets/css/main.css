@@ -1899,93 +1899,11 @@ input, select, textarea {
 						font-size: 1em;
 					}
 
-
-				/* bager menu */
-				#header #navi {
-					transition: all .6s;
-					overflow-y: auto;
-					padding-top: 20px;
-					width: 150px;
-					height: 300px;
-					z-index: 200;
-					top: 0;
-					right: -320px;
-					background-color: #fff;
-					position: fixed;
+				#header nav {
+					display: none;
 				}
 
-					#header .nav_btn {
-						width: 44px;
-						height: 30px;
-						z-index: 300;
-						top: 7px;
-						right: 0px;
-						cursor: pointer;
-						position: absolute;
-					}
-
-					#header nav ul li {
-						display: block;
-					}
-
-						#header nav ul li a {
-							display: block;
-						}
-
-
-					.hamburger_line {
-						transition: all .6s;
-						width: 34px;
-						height: 2px;
-						left: 5px;
-						background-color: #000;
-						position: absolute;
-					}
-
-					.hamburger_line1 { top: 5px; }
-					.hamburger_line2 { top: 16px; }
-					.hamburger_line3 { top: 27px; }
-
-					.nav_bg {
-						opacity: 0;
-						transition: all .6s;
-						width: 100vw;
-						height: 100vh;
-						z-index: 100;
-						top: 0;
-						left: 0;
-						visibility: hidden;
-						background-color: #000;
-						cursor: pointer;
-						position: fixed;
-					}
-
-					/* 表示された時用のCSS */
-					.nav_open #header #navi { right: 0; }
-
-					.nav_open .nav_bg {
-						opacity: .8;
-						visibility: visible;
-					}
-
-					.nav_open .hamburger_line1 {
-						transform: rotate(45deg);
-						top: 20px;
-					}
-
-					.nav_open .hamburger_line2 {
-						width: 0;
-						left: 50%;
-					}
-
-					.nav_open .hamburger_line3 {
-						transform: rotate(-45deg);
-						top: 20px;
-					}
-
 		}
-
-
 
 	body {
 		padding-top: 3em;
@@ -2394,88 +2312,18 @@ input, select, textarea {
 		}
 
 
-/* Copyright */
-		#copyright .copy {
-			font-size: 0.6em;
-			line-height: 1.3em;
-			border-top: 1px solid;
-			margin: 3em 0 0 0;
-			padding: 1em 0 0 0;
-		}
 
-
-
-
-	.video {
+	.video{
 		position:relative;
 		width:85%;
 		padding-top:56.25%;
 		margin-bottom:10%;
 	}
-	.video iframe {
+	.video iframe{
 		position:absolute;
 		top:0;
 		right:0;
 		width:85%;
 		height:85%;
 	}
-
-
-
-
-
-
-
-
-*, *:before, *:after {
--webkit-box-sizing: border-box;
-box-sizing: border-box;
-}
-.cp_cssslider {
-width: 300px;
-padding-top: 200px; /* 画像の高さ */
-position: relative;
-margin: 2em auto;
-text-align: center;
-}
-.cp_cssslider > img {
-position: absolute;
-left: 0;
-top: 0;
-transition: all 0.5s;
-border-radius: 3px;
-box-shadow:0px 0px 5px 0px rgba(0,0,0,0.3);
-}
-.cp_cssslider input[name='cp_switch'] {
-display: none;
-}
-/* サムネイル */
-.cp_cssslider label {
-margin: 15px 5px 0 5px;
-border: 2px solid #ffffff;
-display: inline-block;
-cursor: pointer;
-transition: all 0.5s ease;
-opacity: 0.6;
-border-radius: 3px;
-}
-.cp_cssslider label:hover {
-opacity: 0.9;
-}
-.cp_cssslider label img {
-display: block;
-width: 40px;
-border-radius: 2px;
-}
-.cp_cssslider input[name='cp_switch']:checked + label {
-border: 2px solid #FF7043;
-opacity: 1;
-}
-.cp_cssslider input[name='cp_switch'] ~ img {
-opacity: 0;
-}
-.cp_cssslider input[name='cp_switch']:checked + label + img {
-opacity: 1;
-}
-
 
