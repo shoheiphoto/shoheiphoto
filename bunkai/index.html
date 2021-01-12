@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>bunkai</title>
+  <style>
+    * {
+        text-align: center;
+    }
+    main {
+        width: 600px;
+    }
+  </style>
+</head>
+<body>
+  <h2>変数「num」（0～1000）が偶数か奇数か、そして素数かを表示</h2>
+  <div id="currentNumber"></div>
+  <div id="messageForEvenOrOdd"></div>
+  <div id="messageForPrimeNumber"></div>
+  <div id="primeFactorizationTitle"></div>
+  <div id="primeFactorizationResult"></div>
+  <div><input type="button"  value="ここを押してね" onclick="update()"></div>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript">
+      function update() {
+       location.reload();
+      }
+  </script>
+</body>
+</html>

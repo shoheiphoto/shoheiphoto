@@ -1,0 +1,222 @@
+@charset "UTF-8";
+
+html {
+	scroll-behavior: smooth;
+	color: #333333;
+}
+	@media screen and (max-width: 670px) {
+		html {
+			font-size: 14px;
+		}
+	}
+a {
+	text-decoration: none;
+	color: #0b5d94;
+}
+a:hover {
+	cursor: pointer;
+	font-weight:bold;
+	text-shadow: 1px 1px 1px#0b5d94;
+}
+h2 {
+	font-size: 2em;
+	font-family: 'Quicksand';
+	padding: 0 1em 0;
+	margin: 1em 0 1em;
+	display: inline-block;
+	border-bottom: solid rgba(3, 136, 81, 0.431) 12px;
+}
+h3, p {
+	font-family: 'Times New Roman', 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN", HGS明朝E, メイリオ, Meiryo, serif;
+	font-weight: 500;
+	line-height: 2.2em;
+	text-align: justify;
+	opacity: 1;
+}
+.center {
+	text-align: center;
+	text-indent: 0;
+}
+
+
+header {
+	background-color: white;
+	background: rgba(255, 255, 255, 0.95);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	border-bottom: solid rgba(0,0,0,0.2) 1.5px;
+}
+header h1 {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 1.2em;
+	font-weight: bold;
+	float: left;
+	margin: 0.8em 0 0 0.6em;
+}
+h1 a {
+	color: black;
+}
+nav {
+	font-family:Verdana, Tahoma, sans-serif;
+	float: right;
+	margin-right: 1em;
+	/* background-color: rgba(1, 0, 0, 0.25); */
+}
+.menu li {
+	display: inline-block;
+	padding: 0.4em 0.5em;
+	margin: 0.6em 0 0.3em;
+}
+
+main {
+	text-align: center;
+	margin: auto;
+	/* background: #cfcece; */
+	max-width: 960px;
+}
+
+article{
+ padding: 2% 0% 5%;
+}
+
+section {
+	background-color: white;
+	padding: 30px 0 0;
+	margin: 75px 0 0;
+}
+section:not(:first-child) {
+	border-top: solid rgba(0,0,0,0.2) 1px;
+}
+section:last-child {
+	margin: 5em 0 0;
+}
+
+#intro {
+	text-align: center;
+	background-image: url("../img/intro.jpg");
+	background-attachment: fixed;
+}
+
+#intro p {
+	text-align: left;
+	display: inline-block;
+	padding-bottom: 2em;
+	margin: 0 4%;
+	overflow: hidden;
+}
+
+#works {
+	padding-bottom: 0;
+	max-width: 1000px;
+	margin: 75px auto;
+}
+.work_image {
+	max-width: 85%;
+	margin-top: 30px;
+}
+.frame {
+	border: solid black 1px;
+}
+h3.work_title {
+	padding: 10px 0 0;
+	text-align: center;
+}
+
+.workGroup {
+	overflow: hidden;
+	margin: auto;
+}
+.job {
+	max-width: 445px;
+	float: left;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.job:nth-child(odd) {
+	clear: both;
+}
+.job:nth-child(even) {
+	float: right;
+}
+.job:last-child {
+	margin-bottom: 0;
+}
+.job p {
+	margin: 0 12px;
+	text-align: left;
+}
+.job:hover img{
+	opacity: 0.6;
+}
+
+#future p {
+	margin: 0 4%;
+	text-indent: 1em;
+}
+
+img.author {
+	max-width: 40%;
+	padding: 2% 0 3%;
+}
+img.author:hover {
+	opacity: 0.6;
+}
+#about h3 {
+	font-size: 1.1em;
+	font-weight: bold;
+	margin: 1em 0.5em 0.5em;
+	padding: 0 1em;
+	background-color: rgba(0,0,0,0.1);
+	border-radius: 10px;
+}
+#about p {
+	margin: 0 4%;
+	padding-bottom: 1em;
+}
+
+img.beer {
+	max-width: 12%;
+	float: right;
+}
+
+#copy {
+	clear: both;
+	border-top: dotted black 2px;
+	padding: 10px 0;
+	margin: 20px 5px;
+}
+#copy p {
+	font-size: 73%;
+	text-align: center;
+	font-family: unset;
+}
+	@media screen and (max-width: 750px) {
+		#copy p {
+			
+			text-align: left;
+		}
+	}
+
+#footer {
+	background-color: #39454b;
+	color: white;
+	font-size: 0.8em;
+	padding: 1em;
+	text-align: center;
+}
+
+
+@media screen and (max-width: 950px) {
+	.job {
+		max-width: unset;
+		float: none;
+		display: inline-block;
+		min-height: unset;
+	}
+	.job:nth-child(even) {
+		float: none;
+	}
+}
