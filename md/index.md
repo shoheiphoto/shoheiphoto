@@ -8,8 +8,12 @@ title: Note
 
 ---
 
-## PHP, MySQL  
+## データベース, MySQL  
+* [データベースの基本 01](note/database_01.md){:target="_blank"}  
 * [MySQLのノート](note/mysql.md){:target="_blank"}  
+
+## PHP
+
 
 ## Linux  
 
