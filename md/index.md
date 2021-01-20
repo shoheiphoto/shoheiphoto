@@ -9,8 +9,8 @@ title: Note
 ---
 
 ## データベース, MySQL  
-* [データベースの基本 01](note/database_01.md){:target="_blank"}  
-* [MySQLのノート](note/mysql.md){:target="_blank"}  
+* [データベースの基本概念](note/database_01.md){:target="_blank"}  
+* [MySQLの基本構文 01](note/mysql_01.md){:target="_blank"}  
 
 ## PHP
 
