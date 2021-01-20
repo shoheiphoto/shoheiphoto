@@ -1,24 +1,37 @@
 # MySQLの基本構文 01
 
 * すでに登録されているデータベースを確認するためには、下記のコマンドを入力。
-`show databases;`
+```
+show databases;
+```
 
 * 現在使用しているデータベースの名前を確認。
-`select database();`
+```sql
+select database();
+```
 
 * 確認して表示が出たら、使用するデータベースを変更する。使用するデータベースはuseコマンドを利用することで変更できる。  
   useはSQLではないので最後のセミコロン不要。
-`use mysql`
+```sql
+use mysql
+```
 
 * 選択しているデータベース内のテーブルの表示。
-`show tables;`
-
+```sql
+show tables;
+```
 * データベースの作成（試しにmemberというデータベースを作成）
-`create database member;`
+```sql
+create database member;
+```
 
 * データベースの削除
-`drop database member;`
-`drop database <テーブル名> if exists <テーブル名>;`
+```sql
+drop database member;
+```
+```sql
+drop database <テーブル名> if exists <テーブル名>;
+```
 
 
 * テーブルの作成（テーブルの名前およびテーブル内のフィールドの名前とデータの型を指定する。charset=utf8はなくてもよい。
