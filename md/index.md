@@ -3,12 +3,19 @@ title: Note
 ---
 
 # NOTE
-授業で学んだ内容を項目ごとにまとめています。  
+2020年11月より職業訓練校にて、サーバーの基礎知識やプログラミングを学んでいます。  
+授業で学んだ内容や自習ノートを、項目ごとにまとめてみます。  
 
 ---
 
 ## PHP, MySQL  
 * [MySQLのノート](note/mysql.md){:target="_blank"}  
+
+## Linux  
+
+
+## JavaScript  
+
 
 ---
 
@@ -18,9 +25,11 @@ title: Note
 ---  
 
 ## ポートフォリオサイト
+[エンジニア用ポートフォリオサイト](https://shoheiphoto.github.io/00/portfolio/){:target="_blank"}  
+
 [写真掲載用ポートフォリオサイト](https://shoheiphoto.github.io/00/){:target="_blank"}  
 
-[エンジニア用ポートフォリオサイト](https://shoheiphoto.github.io/00/portfolio/){:target="_blank"}  
+[Qiitaへ投稿した記事](https://qiita.com/suitoupen){:target="_blank"}  
 
 ---
 update:2021/01/20
