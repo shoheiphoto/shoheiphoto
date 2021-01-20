@@ -4,15 +4,17 @@ title: Note
 
 # NOTE
 授業で学んだ内容を項目ごとにまとめています。  
+
 ---
 
 ## PHP, MySQL  
 * [MySQLのノート](note/mysql.md){:target="_blank"}  
-* これからふやしていきます  
+
 ---
 
 ## その他
 * [markdown記法のノート](note/markdown.md){:target="_blank"}  
+
 ---  
 
 ## ポートフォリオサイト
