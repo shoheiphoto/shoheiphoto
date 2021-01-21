@@ -146,14 +146,6 @@ https://www.google.co.jp/
 
 ### GFM:pre記法(バッククォート×3, シンタックスハイライト))
 
-```
-　class Hoge
-　  def hoge
-　    print 'hoge'
-　  end
-　end
-```
-
 ```bash
 git checkout -b develop
 git checkout -b feature-lesson_02
@@ -182,6 +174,8 @@ end
 |align left|align right|align center|
 |a|b|c|
 ```
+
+
 |header1|header2|header3|
 |:--|--:|:--:|
 |align left|align right|align center|
