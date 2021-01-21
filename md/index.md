@@ -31,6 +31,7 @@ title: Note
 ---
 
 ## Other
+* [viエディタの基本操作](note/vieditor.md){:target="_blank"}  
 * [markdown記法のノート](note/markdown.md){:target="_blank"}  
 
 ---  
