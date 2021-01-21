@@ -175,3 +175,7 @@ INSERT INTO tb1r SELECT * FROM tb1;
 INSERT INTO tb1s(name) SELECT number FROM tb1;
 ```
 
+
+
+---
+update:2021/01/21
