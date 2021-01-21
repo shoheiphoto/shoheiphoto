@@ -23,23 +23,28 @@ AS <エイリアス>はつけておこう。これがないとプログラムで
 * 関数を使って計算する（AVG, SUM, COUNT）
 ```
 SELECT AVG(uria) AS 売上 FROM tb;
-```  //平均値
+```
+  //平均値
 
 ```
 SELECT SUM(uria) FROM tb;
-```  //合計
+```
+  //合計
 
 ```
 SELECT COUNT(*) AS 件数 FROM tb;
-```  //NULLでないものの件数
+```
+  //NULLでないものの件数
 
 ```
 SELECT MIN(uria) FROM tb;
-```  //最小値
+```
+  //最小値
 
 ```
 SELECT MAX(uria) FROM tb;
-```  //最大値
+```
+  //最大値
 
 * 文字列を結合する
 ```
@@ -201,4 +206,3 @@ SELECT フィールド名, フィールド名 AS 別名
   GROUP BY フィールド名, フィールド名
   HAVING 条件（集約結果をさらに選択する）
   ORDER BY フィールド名, フィールド名
-  
