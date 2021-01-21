@@ -11,19 +11,26 @@ title: Note
 ## データベース, MySQL  
 * [データベースの基本概念](note/database_01.md){:target="_blank"}  
 * [MySQLの基本構文 01](note/mysql_01.md){:target="_blank"}  
+* [MySQLの基本構文 02](note/mysql_02.md){:target="_blank"}  
+* [MySQLの基本構文 03](note/mysql_03.md){:target="_blank"}  
+
+---
 
 ## PHP
 
+---
 
 ## Linux  
 
+---
 
 ## JavaScript  
 
 
+
 ---
 
-## その他
+## Other
 * [markdown記法のノート](note/markdown.md){:target="_blank"}  
 
 ---  
