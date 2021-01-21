@@ -1,18 +1,177 @@
-# MySQL
+# MySQL 02
 
-* 文字列を結合する  
-`SELECT CONCAT(a,b,c) AS zenbu from tb;`  
+## テーブルを改造する
 
-* 部分取り出し  
-`SUBSTRING (フィールド名, 先頭桁, 桁数)`  
-`SUBSTRING (bang, 2, 3)`  //2桁目から3桁分を取り出す  
+テーブルのフィールドの構造を変更するコマンド（基本的にシステム運用管理者が行う）
+`ALTER TABLE`コマンド
+* フィールドの定義を変更
+```
+ALTER TABLE ・・・ MODIFY ・・・
+```
 
-* 現在の日時を表示する項目にするNOW()  
-`INSERT INTO ima(b)  VALUES(NOW());`  
- としておくと、SELECTで取得した際に2021-01-20 09:42:21 というデータになる。  
+* VARCHARを10から100に変更。
+```
+ALTER TABLE tb1c MODIFY name VARCHAR(100);
+```
 
-* 必要な数だけデータを取得  
-LIMIT データの件数;  
-なお、「○個目から×個目までを表示」という表示方法は、「OFFSET」で行う。「OFFSET」は先頭から指
-定した数個進めた位置から取り出すという意味になる。  
-`select * from tb limit 3 offset 4;`  //4件スキップして（5件目から）3件取り出す  
+* umareの順番を変更。
+```
+ALTER TABLE tb1C MODIFY umare DATETIME FIRST;
+```
+
+* フィールドを追加
+```
+ALTER TABLE ・・・ ADD ・・・
+```
+
+* 生年月日を追加
+```
+ALTER TABLE tb1c ADD birthday DATETIME;
+```
+
+* 生年月日を先頭に追加
+```
+ALTER TABLE tb1C ADD birthday DATETIME FIRST;
+```
+
+* フィールドの名前と定義を変更
+```
+alter table ・・・ change ・・・
+```
+```
+ALTER TABLE tb1C CHANGE umare birth DATE;
+```
+
+* フィールドを削除するとき
+```
+ALTER TABLE ・・・ DROP ・・・
+```
+```
+ALTER TABLE tb1C DROP birth;
+```
+
+---
+
+
+### 主キーを設定
+* 主キーとなる項目を一つだけ設定
+```
+CREATE TABLE テーブル名 (
+  フィールド名 型(桁数) PRIMARY KEY
+  ,フィールド名 型(桁数)
+  ,フィールド名 型(桁数)
+)
+```
+
+* 主キーとなる項目を1～複数設定（こっちのほうがよく使う？）
+```
+CREATE TABLE テーブル名 (
+  フィールド名 型(桁数)
+  ,フィールド名 型(桁数)
+  ,フィールド名 型(桁数)
+  ,PRIMARY KEY(フィールド名,フィールド名,フィールド名)
+)
+```
+
+* 一意キー（ユニークキー unique）の設定
+```
+CREATE TABLE uniuni(
+    a INT UNIQUE  //ユニークキーを設定
+  , b VARCHAR(10)
+);
+```
+
+```
+DESC uniuni;
+```
+
+```
+INSERT INTO uniuni(a) VALUES(NULL);
+```
+
+
+```
+SELECT * FROM uniuni;
+```
+
+
+* 自動的に連続番号が入力されるフィールドの設定
+1：データ型は「 INT 」などの整数型
+2：`AUTO_INCREMENT`を付ける
+3：`PRIMARY KEY`などを設定して一意にする
+
+```
+CREATE TABLE テーブル名(フィールド名 型 AUTO_INCREMENT PRIMARY KEY, フィールド名 型)
+```
+
+```
+CREATE TABLE renzoku(a INT AUTO_INCREMENT PRIMARY KEY, b VARCHAR(10))
+```
+フィールドaは自動で記載されるので、bだけを指定して追加していく。  
+行を削除するとその番号は空き番号のまま。行を追加してもその番号は割り振られない。
+
+
+* 連続番号の初期値の指定
+連続番号のフィールドには自由に値が設定できます。すでに設定されている値の最大値＋１の値から番号が振られることになります。ただし、「primary key」（主キー）の属性が設定されているので、すでに存在する値を重複して入れることはできません。 すでに、登録されているデータを削除して、レコードを追加すると、レコードがなくても登録された最大の値＋１から始まります。この番号を変更したい場合は、下記のように「 auto_increment=0 」を設定します。ただし、すでに登録されている番号より大きい番号を設定する必要があります。
+
+```
+ALTER TABLE renzoku AUTO_INCREMENT = 0;
+```
+
+
+* 行の削除
+```
+DELETE FROM テーブル名 WHERE 条件;
+```
+例）numberがA102の行を削除
+```
+DELETE FROM tb1 WHERE number='A102';
+```
+
+
+* フィールドの初期値（デフォルト）を設定する
+フィールドにdefaultキーワードを付ける。
+新規の場合
+```
+CREATE TABLE テーブル名( フィールド名 型 DEFAULT '〇〇', フィールド名 型)
+```
+
+ NULLを許さない場合
+```
+CREATE TABLE テーブル名( フィールド名 型 NOT NULL, フィールド名 型)
+```
+
+変更する場合
+```
+ALTER TABLE tb1 MODIFY nama VARCHAR(10) DEFAULT '氏名未入力'
+```
+
+
+* インデックスを設定
+テキストを読んで自習でまとめておく。
+
+* テーブルのフィールド構造＋データのコピー
+```
+CREATE TABLE tb1h SELECT * FROM tb1;
+```
+
+* テーブルのフィールド構造だけをコピーする
+```
+CREATE TABLE <新テーブル名> LIKE <コピー元テーブル名>;
+```
+
+```
+CREATE TABLE tb1r LIKE tb1;
+```
+
+* ほかのテーブルのレコードをコピー（構造は作成済みで中身をコピーしたい場合）
+  ※上書きではなく追加である点に注意
+```
+INSERT INTO tb1r SELECT * FROM tb1;
+```
+
+* 特定のフィールドを選択してコピーする
+```
+INSERT INTO tb1s(name) SELECT number FROM tb1;
+```
+
