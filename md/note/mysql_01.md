@@ -37,18 +37,28 @@ CREATE DATABASE member;
 DROP DATABASE member;
 ```
 ```sql
-DROP DATABASE テーブル名 IF EXISTS テーブル名;
+DROP DATABASE テーブル名 
+IF EXISTS テーブル名;
 ```
+
+---
+
 
 ## テーブル作成、確認
 
 * テーブルの作成（テーブルの名前およびテーブル内のフィールドの名前とデータの型を指定する。CHARSET=UTF8はなくてもよい。
   - VARCHARではなくcharを使用すると文字数を固定してしまうため、VARCHARを使おう。
 ```sql
-CREATE TABLE テーブル名(フィールド名　型(桁数), フィールド名　型(桁数)) CHARSET=UTF8;
+CREATE TABLE テーブル名(
+  フィールド名　型(桁数), 
+  フィールド名　型(桁数)
+  ) CHARSET=UTF8;
 ```
 ```sql
-CREATE TABLE tb1(number VARCHAR(10), name VARCHAR(10), age INT) CHARSET=UTF8;
+CREATE TABLE tb1(
+  number VARCHAR(10), 
+  name VARCHAR(10), 
+  age INT) CHARSET=UTF8;
 ```
 
 * テーブルができたかを確認する。
@@ -69,19 +79,24 @@ SOURCE
 
 * データ1件追加
 ```sql
-INSERT INTO テーブル名(フィールド名1,フィールド名2) VALUES('aaa','bbb')
+INSERT INTO テーブル名(
+  フィールド名1,
+  フィールド名2
+  ) VALUES('aaa','bbb')
 ```
-  数値は''で囲まなくてよい。  
-  valuesに全項目記入している場合は、テーブル名の後ろのフィールド名は省略できる。  
-  例）
-  ```sql
-  INSERT INTO tb1 VALUES('A101', '佐藤', 40);
-  ```
-   ※日本語を入力する前には
-  ```sql
-  SET NAMES cp932;
-  ```
-  を入力する。  
+数値は''で囲まなくてよい。  
+valuesに全項目記入している場合は、テーブル名の後ろのフィールド名は省略できる。  
+例）
+```sql
+INSERT INTO tb1 VALUES(
+  'A101', '佐藤', 40);
+```
+
+※日本語を入力する前には
+```sql
+SET NAMES cp932;
+```
+を入力する。  
 
 * テーブル内の情報をすべてを表示。
 ```sql
@@ -98,16 +113,20 @@ DROP TABLE テーブル名 IF EXISTS テーブル名;
 
 * 表示形式がかわる。
 ```sql
-SELECT * FROM テーブル名;` → `SELECT * FROM テーブル名\G
+SELECT * FROM テーブル名;
+```
+↓
+```
+SELECT * FROM テーブル名\G
 ```
 
 * テーブル内のデータの削除して確認（テーブルの器は残る）
 ```sql
 DELETE FROM テーブル名;
-```
-```sql
 SELECT * FROM テーブル名;
 ```
+
+---
 
 
 ## 【データ型の種類について】よく使うものを抜粋
@@ -124,4 +143,3 @@ SELECT * FROM テーブル名;
 * 文字列
   * CHAR型（固定長文字列　1～255文字）
   * VARCHAR型（可変長文字列　1～255文字）
-  
