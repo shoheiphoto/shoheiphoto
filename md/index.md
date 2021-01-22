@@ -1,5 +1,5 @@
 ---
-title: Note
+title: NOTE
 ---
 
 # NOTE
@@ -8,7 +8,7 @@ title: Note
 
 ---
 
-## データベース, MySQL  
+## Database, MySQL  
 * [データベースの基本概念](note/database_01.md){:target="_blank"}  
 
 * [MySQLの基本構文 01](note/mysql_01.md){:target="_blank"}  
@@ -31,7 +31,6 @@ title: Note
 ---
 
 ## Linux  
-
 * [viエディタの基本操作](note/vieditor.md){:target="_blank"}  
 
 ---
@@ -41,7 +40,7 @@ title: Note
 
 ---  
 
-## ポートフォリオサイト
+## Portfolio
 * [エンジニア用ポートフォリオサイト](https://shoheiphoto.github.io/00/portfolio/){:target="_blank"}  
 
 * [写真掲載用ポートフォリオサイト](https://shoheiphoto.github.io/00/){:target="_blank"}  
