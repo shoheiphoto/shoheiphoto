@@ -10,6 +10,7 @@ title: Note
 
 ## データベース, MySQL  
 * [データベースの基本概念](note/database_01.md){:target="_blank"}  
+
 * [MySQLの基本構文 01](note/mysql_01.md){:target="_blank"}  
   - ログイン、データベース作成 / テーブル作成、確認 / 【データ型の種類について】  
 

@@ -137,7 +137,7 @@ ___
 GitHub Flavored Markdown(GFM)はGitHubの独自仕様を加えたMarkdown記法。
 
 ### GFM:リンクテキスト簡易記法
-URLは記述するだけで自動的にリンクになります。
+URLは記述するだけで自動的にリンクになるらしいです（なってる？）。
 ```
 https://www.google.co.jp/
 ```
