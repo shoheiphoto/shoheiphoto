@@ -42,8 +42,8 @@ http://localhost/php/0202/answer.php?favorit=和食
 <?php echo $_GET["favorit"]; ?>
 ```
 
-* POST送信
-```php
+* POST送信  
+```html
 <form action="answer.php" method="post">
   <input type="text" class="form-control" name="name">
   <input type="submit" class="btn" value="送信">
