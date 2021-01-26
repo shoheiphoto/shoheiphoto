@@ -22,7 +22,7 @@ echo "Hello";
 ```
 
 ## サーバとクライアントの通信
-* GET送信
+GET送信  
 ```php
 <a href="answer.php?favorit=和食">和食の方はこちら</a>
 ```
@@ -42,8 +42,8 @@ http://localhost/php/0202/answer.php?favorit=和食
 <?php echo $_GET["favorit"]; ?>
 ```
 
-* POST送信  
-```html
+POST送信  
+```
 <form action="answer.php" method="post">
   <input type="text" class="form-control" name="name">
   <input type="submit" class="btn" value="送信">
@@ -56,7 +56,7 @@ http://localhost/php/0202/answer.php?favorit=和食
 ```
 
 
-* REQUEST  
+REQUEST  
 送信方法がGETでもPOSTでも関係なく受け取れる。  
 ```php
 <?php echo $_REQUEST["name"] ?>
