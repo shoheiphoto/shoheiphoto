@@ -56,8 +56,8 @@ http://localhost/php/0202/answer.php?favorit=和食
 ```
 
 
-* REQUEST
-送信方法がGETでもPOSTでも関係なく受け取れる。
+* REQUEST  
+送信方法がGETでもPOSTでも関係なく受け取れる。  
 ```php
 <?php echo $_REQUEST["name"] ?>
 ```
