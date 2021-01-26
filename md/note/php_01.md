@@ -26,6 +26,7 @@ echo "Hello";
 ```php
 <a href="answer.php?favorit=和食">和食の方はこちら</a>
 ```
+
 ```php
 <form action="aaa.php" method="get">
   <input type="text" name="name">
