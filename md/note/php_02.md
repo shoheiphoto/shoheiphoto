@@ -175,8 +175,22 @@ var_dump($_SESSION);
 unset(削除したい要素);  
 unset(削除したい配列名[添え字]);  
 
+```php
+if (isset($_SESSION["cart"]) && isset($_POST["deleteIndex"])) {
+			unset($_SESSION["cart"][$_POST["deleteIndex"]]);
+		}
+```
 
+上のコードをわかりやすく書き換える  
 
+```php
+if (isset($_POST["deleteIndex"])) {
+  $cart = $_SESSION["cart"];
+  $index = $_POST["deleteIndex"];
+  unset($cart[$index]);
+  $_SESSION["cart"] = $cart;
+}
+```
 
 
 
