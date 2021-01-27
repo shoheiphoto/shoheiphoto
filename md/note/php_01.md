@@ -247,3 +247,9 @@ if (isset($_POST["skill"])) {
 } ?>
 ```
 
+
+---
+[HOMEへ戻る](../index.md)  
+
+---
+update:2021/01/26

@@ -179,4 +179,7 @@ INSERT INTO tb1s(name) SELECT number FROM tb1;
 
 
 ---
+[HOMEへ戻る](../index.md)  
+
+---
 update:2021/01/22
