@@ -121,7 +121,7 @@ echo $_SESSION["count"]. "回目のページ表示です。";
 
 ### セッションに登録する
 
-* <input type="hidden">  
+* `<input type="hidden">`
 ブラウザ上に表示されない非表示データを送信することができる。  
 
 テキストp.208  
