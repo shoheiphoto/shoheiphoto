@@ -49,9 +49,9 @@ title: NOTE
 ---  
 
 ## Portfolio
-* [エンジニア用ポートフォリオサイト](https://shoheiphoto.github.io/00/portfolio/){:target="_blank"}  
+* [エンジニア用ポートフォリオサイト](https://shoheiphoto.github.io/shoheiphoto/portfolio/){:target="_blank"}  
 
-* [写真掲載用ポートフォリオサイト](https://shoheiphoto.github.io/00/){:target="_blank"}  
+* [写真掲載用ポートフォリオサイト](https://shoheiphoto.github.io/shoheiphoto/){:target="_blank"}  
 
 * [Qiitaへ投稿した記事](https://qiita.com/suitoupen){:target="_blank"}  
 
