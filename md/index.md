@@ -29,7 +29,7 @@ title: NOTE
 * [PHPの基本構文 02](note/php_02.md){:target="_blank"}  
   - 連想配列 / 関数 / セッション  
 
-* [PHPとデータベースの連携](){:target="_blank"}  
+* [PHPとデータベースの連携](note/php_03.md){:target="_blank"}  
   - under construction...  
 
 ---

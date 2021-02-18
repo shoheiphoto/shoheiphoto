@@ -2,7 +2,7 @@
 
 ## データベース
 
-
+under construction...  
 
 ---
 [HOMEへ戻る](../index.md)  
