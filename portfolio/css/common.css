@@ -211,7 +211,7 @@ img.beer {
 
 @media screen and (max-width: 950px) {
 	.job {
-		max-width: unset;
+		max-width: 770px;
 		float: none;
 		display: inline-block;
 		min-height: unset;
