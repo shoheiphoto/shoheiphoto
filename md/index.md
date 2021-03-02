@@ -34,10 +34,6 @@ title: NOTE
 
 ---
 
-## JavaScript  
-
----
-
 ## Linux  
 * [viエディタの基本操作](note/vieditor.md){:target="_blank"}  
 
@@ -55,3 +51,4 @@ title: NOTE
 
 * [Qiitaへ投稿した記事](https://qiita.com/suitoupen){:target="_blank"}  
 
+* [GitHub](https://github.com/shoheiphoto){:target="_blank"}  
