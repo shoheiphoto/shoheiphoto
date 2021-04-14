@@ -220,3 +220,30 @@ img.beer {
 		float: none;
 	}
 }
+
+
+
+
+
+.mouse-stalker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1px;
+  height: 1px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  pointer-events: none;
+  mix-blend-mode: exclusion;
+}
+
+.mouse-stalker > div {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+  flex-shrink: 0;
+}
+
