@@ -14,7 +14,7 @@ function showElementAnimation() {
       element[i].classList.add('is-show');
     } else if (scrollY + windowH < elemY) {
     // 上にスクロールして再度非表示にする場合はこちらを記述
-      element[i].classList.remove('is-show');
+      // element[i].classList.remove('is-show');
     }
   }
 }
